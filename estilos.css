@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.grid__content {
+    padding: 2rem 6rem;
+}
+
+.grid__logo {
+    margin-bottom: 4rem;
+}
+
+.grid__title {
+    font-size: 3.4rem;
+}
+
+.grid__paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.grid__list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.grid__chackmark {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+    position: relative;
+    top: 0.3rem;
+}
+
+.grid__boton {
+    background: #000;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.grid__text {
+    margin-top: 3rem;
+    margin-bottom: 0.6rem;
+}
+
+.grid__empresas {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+
+.grid__image {
+    background-image: url(Hero\ Image.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1123px) {
+    .grid__title {
+        font-size: 2.8rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .grid__title {
+        font-size: 2.2rem;
+    }
+
+    .grid__content {
+        padding: 2rem 4.5rem;
+    }
+
+    .grid__paragraph {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .grid__logo {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 60%;
+    }
+
+    .grid__image {
+        grid-row: 1/1;
+        height: 100%;
+        background-image: url(Hero\ Image\ \(Tablet\ and\ Mobile\).jpg);
+        background-size: cover;
+    }
+
+    .grid__logo {
+        display: none;
+    }
+
+    .grid__content {
+        padding: 0.5rem 4.5rem;
+    }
+
+    .grid__paragraph {
+        font-size: 1rem;
+        margin-bottom: 0.2;
+    }
+
+    .grid__text {
+        margin-top: 1.7rem;
+        margin-bottom: 0.4rem;
+    }
+    
+}
